@@ -186,7 +186,11 @@ em {
 .boxs {
   text-align: center;
 }
-
+.boxs-inner {
+  max-width: 1000px;
+  display: inline-block;
+  text-align: left;
+}
 .boxs .box-wrap {
   display: inline-block;
   width: 100%;
