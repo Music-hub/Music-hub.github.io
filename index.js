@@ -137,6 +137,7 @@
     "#description",
     "#images",
     "#feature",
+    "#us",
     "#copyright"
   ];
   var offsets = 40;

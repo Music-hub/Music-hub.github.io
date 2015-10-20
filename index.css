@@ -212,6 +212,7 @@ em {
 .feature {
   background: #777;
   color: #eee;
+  padding: 2em 0em;
 }
 .feature .box-wrap .box {
   border: 2px solid #eee;
@@ -220,7 +221,117 @@ em {
   border-bottom: 2px solid #eee;
 }
 
+.us {
+  text-align: center;
+  padding: 2em 0em;
+}
+.us .people {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: left;
+  max-width: 1000px;
+}
+.us .person-wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+.us .person {
+  margin: 1em;
+}
+.us .person .image {
+  border-radius: 1.5em;
+  overflow:hidden;
+  position: relative;
+  line-height: 0px;
+  vertical-align: middle;
+}
+.us .person .image img {
+  width: 100%;
+}
+.us .person .image .link {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  line-height: 0px;
+  text-align: center;
+  background: #79a;
+  background: rgba(112, 144, 160, 0.7);
+  
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.us .person .image:hover .link {
+  opacity: 1;
+}
 
+.us .person .image li {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  height: 2em;
+  width: 2em;
+  background: white;
+  color: #777;
+  line-height: 3em;
+  border-radius: 1.5em;
+  display: relative;
+}
+
+
+.us .person .image .spacer {
+  height: 100%;
+  width: 0px;
+  background: transparent;
+}
+.us .person .image li a {
+  color: #777;
+  display: block;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+.us .person .image li a:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 1em;
+  color: #79a;
+}
+.us .person .image li a.facebook:before {
+  content: "\f09a";
+}
+.us .person .image li a.github:before {
+  content: "\f113";
+}
+.us .person .image li a.twitter:before {
+  content: "\f099";
+}
+.us .person .image li a.email:before {
+  content: "\f0e0";
+}
+
+.us .person .text {
+  padding: 0em 1em;
+}
+
+.us .person .text h3 {
+  font-family: sans-serif;
+  color: #244;
+}
+
+.us .person .text h4 {
+  color: #777;
+  font-style: italic;
+}
 .footer {
   text-align: center;
   background:#333333;
@@ -307,7 +418,6 @@ em {
 .nav a:before {
   display: none;
 }
-
 .nav .links li {
   text-align:left;
   margin: 0em 0.5em 0em 0.5em;
@@ -387,7 +497,12 @@ label.click {
   .boxs .box-wrap {
     width: 33%;
   }
+  
+  .us .person-wrap {
+    width: 33%;
+  }
 }
+
 @media screen and (min-width: 1000px) {
   .about-inner h1 {
     font-size: 6em;
