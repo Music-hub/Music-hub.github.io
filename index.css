@@ -190,12 +190,12 @@ em {
   max-width: 1000px;
   display: inline-block;
   text-align: left;
-  vertical-align: top;
 }
 .boxs .box-wrap {
   display: inline-block;
   width: 100%;
   overflow: hidden;
+  vertical-align: top;
 }
 .boxs .box-wrap .box {
   margin: 4em 1em;
